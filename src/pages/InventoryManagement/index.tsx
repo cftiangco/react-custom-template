@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Tabs from "../../utils/Tabs";
+import Items from "./tabs/Items";
+
 import Container from "../../components/Container";
 
 const InventoryManagement = () => {
@@ -11,18 +13,22 @@ const InventoryManagement = () => {
         {
             label:"Items",
             tab:'items',
+            active:true,
         },
         {
             label:"Orders",
-            tab:'orders'
+            tab:'orders',
+            active:true,
         },
         {
             label:"Dispose",
             tab:'dispose',
+            active:true,
         },
         {
             label:"Fast Moving",
-            tab:'fast-moving'
+            tab:'fast-moving',
+            active:true,
         },
     ]
 
@@ -41,9 +47,7 @@ const InventoryManagement = () => {
             />
 
             {tab === "items" && (
-                <Container>
-                    <p>Item Tab</p>
-                </Container>
+                <Items />
             )}
 
             {tab === "orders" && (

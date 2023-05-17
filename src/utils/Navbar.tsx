@@ -7,11 +7,11 @@ import { useLocation } from 'react-router-dom';
 
 
 const navs: any = [
-    { label: "Dashboard", path: "/dashboard", active: true, icon: <FaChartBar /> },
+    { label: "Dashboard", path: "/dashboard", active: false, icon: <FaChartBar /> },
     { label: "Inventory Management", path: "/inventory-management", active: true, icon: <FaArchive /> },
-    { label: "Room Management", path: "/room-management", active: true, icon: <FaDoorOpen /> },
-    { label: "Reservation Management", path: "/reservation-management", active: true, icon: <FaBook /> },
-    { label: "User Management", path: "/user-management", active: true, icon: <FaUserCog /> },
+    { label: "Room Management", path: "/room-management", active: false, icon: <FaDoorOpen /> },
+    { label: "Reservation Management", path: "/reservation-management", active: false, icon: <FaBook /> },
+    { label: "User Management", path: "/user-management", active: false, icon: <FaUserCog /> },
     { label: "Forms", path: "/forms", active: true, icon: <FaCode /> },
 ]
 

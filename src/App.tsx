@@ -5,6 +5,11 @@ import Navbar from './utils/Navbar';
 import Footer from './utils/Footer';
 
 import InventoryManagement from './pages/InventoryManagement';
+import Forms from './pages/Forms';
+import UserManagement from './pages/UserManagement';
+import ReservationManagement from './pages/ReservationManagement';
+import Dashboard from './pages/Dashboard';
+import RoomManagement from './pages/RoomManagement';
 
 function App() {
 
@@ -13,13 +18,13 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-            <Route path="/forms" element={(<h1>Form</h1>)} />
-            <Route path="/dashboard" element={(<h1>Dashboard</h1>)} />
+            <Route path="/forms" element={<Forms/>} />
+            <Route path="/dashboard" element={<Dashboard/>} />
             <Route path="/inventory-management" element={<InventoryManagement />} />
-            <Route path="/room-management" element={(<h1>Room Management</h1>)} />
-            <Route path="/reservation-management" element={(<h1>Reservation Management</h1>)} />
-            <Route path="/user-management" element={(<h1>User Management</h1>)} />
-        </Routes>
+            <Route path="/room-management" element={<RoomManagement/>} />
+            <Route path="/reservation-management" element={<ReservationManagement/>} />
+            <Route path="/user-management" element={<UserManagement/>} />
+        </Routes> 
         <Footer />
       </Router>
     </div>

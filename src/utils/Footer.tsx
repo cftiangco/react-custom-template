@@ -11,14 +11,14 @@ const Footer = () => {
                 </div>
                 <div className="mx-4 flex items-center gap-2">
 
-                    <div className="flex items-center gap-1 cursor-pointer">
-                        <FaCog className="text-[#9BA4B5]" />
-                        <p className="text-xs m-0 p-0 text-[#9BA4B5] font-medium">Setting</p>
+                    <div className="flex items-center gap-1 cursor-pointer group">
+                        <FaCog className="text-[#9BA4B5] group-hover:text-white" />
+                        <p className="text-xs m-0 p-0 text-[#9BA4B5] font-medium group-hover:text-white">Setting</p>
                     </div>
 
-                    <div className="flex items-center gap-1 cursor-pointer">
-                        <FaUserCircle className="text-[#9BA4B5]" />
-                        <p className="text-xs m-0 p-0 text-[#9BA4B5] font-medium">Crimson</p>
+                    <div className="flex items-center gap-1 cursor-pointer group">
+                        <FaUserCircle className="text-[#9BA4B5] group-hover:text-white" />
+                        <p className="text-xs m-0 p-0 text-[#9BA4B5] font-medium group-hover:text-white">Crimson</p>
                     </div>
 
                 </div>

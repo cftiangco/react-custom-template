@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import Tabs from "../../utils/Tabs"
-import Buttons from './tabs/buttons';
-import Tables from './tabs/tables';
-import Fields from './tabs/fields';
-import Modals from './tabs/modals';
+import Buttons from './tabs/Buttons';
+import Tables from './tabs/Tables';
+import Fields from './tabs/Fields';
+import Modals from './tabs/Modals';
+
 const Forms = () => {
     const [selected, setSelected] = useState<number>(0);
     const [tab, setTab] = useState<string>('tables');

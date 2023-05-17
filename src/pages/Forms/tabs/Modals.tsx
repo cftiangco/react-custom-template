@@ -1,7 +1,7 @@
 
 const Modals = () => {
     return (
-        <div>Modals</div>
+        <div>CustomModals</div>
     )
 }
 

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Subnav from "../../utils/Subnav";
+import Tabs from "../../utils/Tabs";
 import Container from "../../components/Container";
 
 const InventoryManagement = () => {
@@ -7,7 +7,7 @@ const InventoryManagement = () => {
     const [selected,setSelected] = useState<number>(0); 
     const [tab,setTab] = useState<string>('items'); 
 
-    const subLinks = [
+    const tabs = [
         {
             label:"Items",
             tab:'items',
@@ -34,8 +34,8 @@ const InventoryManagement = () => {
 
     return (
        <div>
-            <Subnav 
-                links={subLinks}
+            <Tabs 
+                tabs={tabs}
                 selected={selected}
                 onClickLink={handleOnClickLink}
             />

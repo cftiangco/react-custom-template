@@ -8,6 +8,7 @@ import Modals from './tabs/Modals';
 const Forms = () => {
     const [selected, setSelected] = useState<number>(0);
     const [tab, setTab] = useState<string>('tables');
+    const [showBasicModal,setShowBasicModal] = useState<boolean>(false);
 
     const tabs = [
         {
@@ -59,7 +60,11 @@ const Forms = () => {
             )}
 
             {tab === "modals" && (
-                <Modals />
+                <Modals 
+                    onClickBasicModal={() => setShowBasicModal(true)}
+                    basicModalVisible={showBasicModal}
+                    basicModalOnClickClose={() => setShowBasicModal(false)}
+                />
             )}
 
         </div>

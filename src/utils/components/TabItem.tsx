@@ -10,7 +10,7 @@ const TabItem = ({isActive,label,onClickLink}:ITabItem) => {
     return (
         <h4 
             onClick={onClickLink}
-            className={`text-xs border-r-2 pr-4 ${isActive ? "text-black font-bold":"text-gray-500 hover:text-black"}`}>{label}</h4>
+            className={`text-xs px-4 py-1 rounded-2xl w-auto ${isActive ? "text-white font-semibold bg-[#394867] shadow-xl":"text-gray-500 hover:text-black"}`}>{label}</h4>
     )
 }
     

@@ -1,7 +1,11 @@
 
+import Container from "../../../components/Container"
+
 const Tables = () => {
     return (
-        <div>Tables</div>
+        <Container>
+            <div>Tables</div>
+        </Container>
     )
 }
 
